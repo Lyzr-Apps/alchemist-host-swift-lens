@@ -1,0 +1,84 @@
+{
+  "agent_name": "Occasion Planner Agent",
+  "agent_id": "69859557ab4bf65a66ad089b",
+  "agent_purpose": "menu_planning",
+  "description": "Converts event details into optimized drink menu structures",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "occasion_type": "string",
+      "guest_count": "number",
+      "duration_hours": "number",
+      "menu_structure": {
+        "signature_cocktails": "number",
+        "batch_drinks": "number",
+        "classic_options": "number",
+        "non_alcoholic": "number"
+      },
+      "drink_styles": [
+        "string"
+      ],
+      "service_recommendation": "string",
+      "complexity_level": "string",
+      "total_drink_slots": "number"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "occasion_type": "outdoor summer party",
+      "guest_count": 15,
+      "duration_hours": 3,
+      "menu_structure": {
+        "signature_cocktails": 2,
+        "batch_drinks": 1,
+        "classic_options": 2,
+        "non_alcoholic": 2
+      },
+      "drink_styles": [
+        "tropical",
+        "refreshing"
+      ],
+      "service_recommendation": "mixed",
+      "complexity_level": "simple",
+      "total_drink_slots": 7
+    },
+    "metadata": {
+      "agent_name": "Occasion Planner Agent",
+      "timestamp": "2023-11-28T10:05:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:25:24.858728",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "occasion_type": "outdoor summer party",
+      "guest_count": 15,
+      "duration_hours": 3,
+      "menu_structure": {
+        "signature_cocktails": 2,
+        "batch_drinks": 1,
+        "classic_options": 2,
+        "non_alcoholic": 2
+      },
+      "drink_styles": [
+        "tropical",
+        "refreshing"
+      ],
+      "service_recommendation": "mixed",
+      "complexity_level": "simple",
+      "total_drink_slots": 7
+    },
+    "metadata": {
+      "agent_name": "Occasion Planner Agent",
+      "timestamp": "2023-11-28T10:05:00Z"
+    }
+  },
+  "test_passed": true
+}

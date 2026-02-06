@@ -1,0 +1,35 @@
+{
+  "agent_name": "Occasion Planner Agent",
+  "agent_id": "69859557ab4bf65a66ad089b",
+  "test_message": "Create menu structure for: outdoor summer party, 15 guests, casual vibe, 3-hour duration",
+  "expected_purpose": "menu_planning",
+  "timestamp": "2026-02-06T07:25:24.857977",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "occasion_type": "outdoor summer party",
+      "guest_count": 15,
+      "duration_hours": 3,
+      "menu_structure": {
+        "signature_cocktails": 2,
+        "batch_drinks": 1,
+        "classic_options": 2,
+        "non_alcoholic": 2
+      },
+      "drink_styles": [
+        "tropical",
+        "refreshing"
+      ],
+      "service_recommendation": "mixed",
+      "complexity_level": "simple",
+      "total_drink_slots": 7
+    },
+    "metadata": {
+      "agent_name": "Occasion Planner Agent",
+      "timestamp": "2023-11-28T10:05:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"occasion_type\": \"outdoor summer party\",\n    \"guest_count\": 15,\n    \"duration_hours\": 3,\n    \"menu_structure\": {\n      \"signature_cocktails\": 2,\n      \"batch_drinks\": 1,\n      \"classic_options\": 2,\n      \"non_alcoholic\": 2\n    },\n    \"drink_styles\": [\"tropical\", \"refreshing\"],\n    \"service_recommendation\": \"mixed\",\n    \"complexity_level\": \"simple\",\n    \"total_drink_slots\": 7\n  },\n  \"metadata\": {\n    \"agent_name\": \"Occasion Planner Agent\",\n    \"timestamp\": \"2023-11-28T10:05:00Z\"\n  }\n}"
+}

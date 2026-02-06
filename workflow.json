@@ -1,0 +1,110 @@
+{
+  "workflow": {
+    "nodes": [
+      {
+        "id": "input_node",
+        "type": "Input",
+        "label": "Chat Interface",
+        "nodeCategory": "input"
+      },
+      {
+        "id": "host_orchestrator",
+        "type": "Agent",
+        "label": "Host Orchestrator",
+        "nodeCategory": "agent",
+        "agentId": "698595caab4bf65a66ad08a4",
+        "agentName": "Host Orchestrator",
+        "agentType": "manager"
+      },
+      {
+        "id": "guardian_agent",
+        "type": "Agent",
+        "label": "Guardian Agent",
+        "nodeCategory": "agent",
+        "agentId": "69859542e5d25ce3f598cba7",
+        "agentName": "Guardian Agent",
+        "agentType": "sub_agent"
+      },
+      {
+        "id": "occasion_planner_agent",
+        "type": "Agent",
+        "label": "Occasion Planner Agent",
+        "nodeCategory": "agent",
+        "agentId": "69859557ab4bf65a66ad089b",
+        "agentName": "Occasion Planner Agent",
+        "agentType": "sub_agent"
+      },
+      {
+        "id": "catalog_agent",
+        "type": "Agent",
+        "label": "Catalog Agent",
+        "nodeCategory": "agent",
+        "agentId": "6985956efe576c19864be8aa",
+        "agentName": "Catalog Agent",
+        "agentType": "sub_agent"
+      },
+      {
+        "id": "mixologist_agent",
+        "type": "Agent",
+        "label": "Mixologist Agent",
+        "nodeCategory": "agent",
+        "agentId": "69859587f7f7d3ffa5d86553",
+        "agentName": "Mixologist Agent",
+        "agentType": "sub_agent"
+      },
+      {
+        "id": "calculator_agent",
+        "type": "Agent",
+        "label": "Calculator Agent",
+        "nodeCategory": "agent",
+        "agentId": "698595a5a791e6e318b8df73",
+        "agentName": "Calculator Agent",
+        "agentType": "sub_agent"
+      },
+      {
+        "id": "output_node",
+        "type": "Output",
+        "label": "Chat Response",
+        "nodeCategory": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "input_node",
+        "target": "host_orchestrator"
+      },
+      {
+        "source": "host_orchestrator",
+        "target": "guardian_agent"
+      },
+      {
+        "source": "host_orchestrator",
+        "target": "occasion_planner_agent"
+      },
+      {
+        "source": "host_orchestrator",
+        "target": "catalog_agent"
+      },
+      {
+        "source": "host_orchestrator",
+        "target": "mixologist_agent"
+      },
+      {
+        "source": "host_orchestrator",
+        "target": "calculator_agent"
+      },
+      {
+        "source": "host_orchestrator",
+        "target": "output_node"
+      }
+    ]
+  },
+  "metadata": {
+    "workflow_name": "The Alchemist Host",
+    "created_at": "2026-02-06T00:00:00Z",
+    "total_agents": 6,
+    "manager_agents": 1,
+    "sub_agents": 5,
+    "knowledge_bases": 2
+  }
+}

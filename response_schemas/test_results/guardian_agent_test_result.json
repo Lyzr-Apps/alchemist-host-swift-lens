@@ -1,0 +1,32 @@
+{
+  "agent_name": "Guardian Agent",
+  "agent_id": "69859542e5d25ce3f598cba7",
+  "test_message": "Check if this event is safe: 50 guests, 20 bottles of whiskey, college party theme",
+  "expected_purpose": "safety_compliance",
+  "timestamp": "2026-02-06T07:25:22.691712",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "requires_confirmation",
+    "result": {
+      "validation_passed": true,
+      "issues_found": [
+        "Potential for excessive drinking",
+        "Age verification for college party attendees"
+      ],
+      "recommended_action": "confirm_with_user",
+      "safe_alternative": "Consider reducing the amount of alcohol and ensure responsible consumption guidelines are clearly communicated to all attendees.",
+      "confirmation_required": true,
+      "confirmation_message": "Please confirm that all attendees are of legal drinking age and responsible consumption measures are in place given the quantity of alcohol for the event."
+    },
+    "metadata": {
+      "agent_name": "Guardian Agent",
+      "timestamp": "2023-11-23T19:08:57Z",
+      "policies_checked": [
+        "Responsible consumption enforcement",
+        "Age-gating validation"
+      ]
+    }
+  },
+  "raw_response": "{\n  \"status\": \"requires_confirmation\",\n  \"result\": {\n    \"validation_passed\": true,\n    \"issues_found\": [\n      \"Potential for excessive drinking\",\n      \"Age verification for college party attendees\"\n    ],\n    \"recommended_action\": \"confirm_with_user\",\n    \"safe_alternative\": \"Consider reducing the amount of alcohol and ensure responsible consumption guidelines are clearly communicated to all attendees.\",\n    \"confirmation_required\": true,\n    \"confirmation_message\": \"Please confirm that all attendees are of legal drinking age and responsible consumption measures are in place given the quantity of alcohol for the event.\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Guardian Agent\",\n    \"timestamp\": \"2023-11-23T19:08:57Z\",\n    \"policies_checked\": [\n      \"Responsible consumption enforcement\",\n      \"Age-gating validation\"\n    ]\n  }\n}"
+}

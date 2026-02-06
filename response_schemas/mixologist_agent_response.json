@@ -1,0 +1,125 @@
+{
+  "agent_name": "Mixologist Agent",
+  "agent_id": "69859587f7f7d3ffa5d86553",
+  "agent_purpose": "recipe_retrieval",
+  "description": "Provides verified cocktail recipes with complete specifications",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "recipe_name": "string",
+      "recipe_source": "string",
+      "ingredients": [
+        {
+          "name": "string",
+          "amount": "string",
+          "unit": "string",
+          "notes": "string"
+        }
+      ],
+      "instructions": [
+        "string"
+      ],
+      "glassware": "string",
+      "garnish": "string",
+      "ice": "string",
+      "yield": "string",
+      "batch_scalable": "boolean",
+      "difficulty": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "recipe_verified": "boolean"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "recipe_name": "Margarita",
+      "recipe_source": "classic_standard",
+      "ingredients": [
+        {
+          "name": "Tequila",
+          "amount": "2",
+          "unit": "oz",
+          "notes": "Use high-quality blanco tequila for a smooth flavor"
+        },
+        {
+          "name": "Lime juice",
+          "amount": "1",
+          "unit": "oz",
+          "notes": "Freshly squeezed for best taste"
+        },
+        {
+          "name": "Cointreau",
+          "amount": "1",
+          "unit": "oz",
+          "notes": "Triple sec alternatives can be used"
+        }
+      ],
+      "instructions": [
+        "Rim the glass with salt.",
+        "Combine tequila, lime juice, and Cointreau in a shaker with ice.",
+        "Shake thoroughly and strain into the glass over fresh ice."
+      ],
+      "glassware": "Margarita glass",
+      "garnish": "Lime wheel or wedge",
+      "ice": "Fresh ice",
+      "yield": "1 serving",
+      "batch_scalable": false,
+      "difficulty": "easy"
+    },
+    "metadata": {
+      "agent_name": "Mixologist Agent",
+      "timestamp": "2023-10-12T12:00:00Z",
+      "recipe_verified": true
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:26:26.049192",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "recipe_name": "Margarita",
+      "recipe_source": "classic_standard",
+      "ingredients": [
+        {
+          "name": "Tequila",
+          "amount": "2",
+          "unit": "oz",
+          "notes": "Use high-quality blanco tequila for a smooth flavor"
+        },
+        {
+          "name": "Lime juice",
+          "amount": "1",
+          "unit": "oz",
+          "notes": "Freshly squeezed for best taste"
+        },
+        {
+          "name": "Cointreau",
+          "amount": "1",
+          "unit": "oz",
+          "notes": "Triple sec alternatives can be used"
+        }
+      ],
+      "instructions": [
+        "Rim the glass with salt.",
+        "Combine tequila, lime juice, and Cointreau in a shaker with ice.",
+        "Shake thoroughly and strain into the glass over fresh ice."
+      ],
+      "glassware": "Margarita glass",
+      "garnish": "Lime wheel or wedge",
+      "ice": "Fresh ice",
+      "yield": "1 serving",
+      "batch_scalable": false,
+      "difficulty": "easy"
+    },
+    "metadata": {
+      "agent_name": "Mixologist Agent",
+      "timestamp": "2023-10-12T12:00:00Z",
+      "recipe_verified": true
+    }
+  },
+  "test_passed": true
+}

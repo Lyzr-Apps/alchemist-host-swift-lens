@@ -1,0 +1,15 @@
+{
+  "agent_name": "Host Orchestrator",
+  "agent_id": "698595caab4bf65a66ad08a4",
+  "test_message": "I'm planning a backyard BBQ for 15 people this Saturday. We want some easy cocktails that aren't too strong.",
+  "expected_purpose": "chat_orchestrator",
+  "timestamp": "2026-02-06T07:24:59.653430",
+  "is_valid_json": false,
+  "validation_errors": [
+    "Response is not valid JSON: Expecting value: line 1 column 1 (char 0)"
+  ],
+  "actual_response": {
+    "raw_text": "```json\n{\n  \"status\": \"in_progress\",\n  \"result\": {\n    \"conversation_state\": \"slot_filling\",\n    \"collected_slots\": {\n      \"event_type\": \"Backyard BBQ\",\n      \"guest_count\": 15,\n      \"duration_hours\": null,\n      \"occasion\": null,\n      \"preferences\": [\"Easy Cocktails\", \"Not Too Strong\"]\n    },\n    \"next_question\": \"How long will the backyard BBQ last?\",\n    \"quick_replies\": [\"2 hours\", \"4 hours\", \"6 hours\", \"All day\"],\n    \"plan_cards\": [],\n    \"current_action\": \"Collecting event details - gathered event type, guest count, and preferences, now asking about duration\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Host Orchestrator\",\n    \"timestamp\": \"2023-10-11T09:30:00Z\",\n    \"sub_agents_called\": []\n  }\n}\n```"
+  },
+  "raw_response": "```json\n{\n  \"status\": \"in_progress\",\n  \"result\": {\n    \"conversation_state\": \"slot_filling\",\n    \"collected_slots\": {\n      \"event_type\": \"Backyard BBQ\",\n      \"guest_count\": 15,\n      \"duration_hours\": null,\n      \"occasion\": null,\n      \"preferences\": [\"Easy Cocktails\", \"Not Too Strong\"]\n    },\n    \"next_question\": \"How long will the backyard BBQ last?\",\n    \"quick_replies\": [\"2 hours\", \"4 hours\", \"6 hours\", \"All day\"],\n    \"plan_cards\": [],\n    \"current_action\": \"Collecting event details - gathered event type, guest count, and preferences, now asking about duration\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Host Orchestrator\",\n    \"timestamp\": \"2023-10-11T09:30:00Z\",\n    \"sub_agents_called\": []\n  }\n}\n```"
+}

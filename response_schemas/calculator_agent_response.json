@@ -1,0 +1,225 @@
+{
+  "agent_name": "Calculator Agent",
+  "agent_id": "698595a5a791e6e318b8df73",
+  "agent_purpose": "quantity_calculation",
+  "description": "Calculates quantities and optimizes budget for event drink planning",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "total_servings": "number",
+      "bottles_needed": [
+        {
+          "spirit_type": "string",
+          "quantity": "number",
+          "size": "string",
+          "reason": "string"
+        }
+      ],
+      "mixers_needed": [
+        {
+          "mixer_type": "string",
+          "quantity": "number",
+          "unit": "string",
+          "reason": "string"
+        }
+      ],
+      "ice_needed": {
+        "amount": "number",
+        "unit": "string"
+      },
+      "garnishes_needed": [
+        {
+          "garnish_type": "string",
+          "quantity": "string"
+        }
+      ],
+      "estimated_cost": "number",
+      "budget_status": "string",
+      "pack_size_optimizations": [
+        "string"
+      ],
+      "safety_flags": [
+        "any"
+      ],
+      "cost_breakdown": {
+        "spirits": "number",
+        "mixers": "number",
+        "garnishes": "number",
+        "ice": "number"
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "calculation_method": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "total_servings": 90,
+      "bottles_needed": [
+        {
+          "spirit_type": "Tequila",
+          "quantity": 6,
+          "size": "750ml",
+          "reason": "Margaritas require tequila. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle)."
+        },
+        {
+          "spirit_type": "Rum",
+          "quantity": 6,
+          "size": "750ml",
+          "reason": "Mojitos require rum. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle)."
+        }
+      ],
+      "mixers_needed": [
+        {
+          "mixer_type": "Lime Juice",
+          "quantity": 6,
+          "unit": "bottles",
+          "reason": "Lime juice is a key ingredient in both cocktails."
+        },
+        {
+          "mixer_type": "Simple Syrup",
+          "quantity": 3,
+          "unit": "bottles",
+          "reason": "Used in both Margaritas and Mojitos."
+        },
+        {
+          "mixer_type": "Club Soda",
+          "quantity": 3,
+          "unit": "L",
+          "reason": "Used for Mojitos."
+        },
+        {
+          "mixer_type": "Triple Sec",
+          "quantity": 3,
+          "unit": "bottles",
+          "reason": "Used for Margaritas."
+        }
+      ],
+      "ice_needed": {
+        "amount": 15,
+        "unit": "lbs"
+      },
+      "garnishes_needed": [
+        {
+          "garnish_type": "Mint Leaves",
+          "quantity": "Sufficient for 45 Mojito servings"
+        },
+        {
+          "garnish_type": "Salt for Rim",
+          "quantity": "Sufficient for 45 Margarita servings"
+        },
+        {
+          "garnish_type": "Lime Wedges",
+          "quantity": "Sufficient for both cocktail types"
+        }
+      ],
+      "estimated_cost": 350,
+      "budget_status": "within_budget",
+      "pack_size_optimizations": [
+        "Buy spirits by the case for better pricing.",
+        "Consider bulk purchasing for lime juice and other mixers."
+      ],
+      "safety_flags": [],
+      "cost_breakdown": {
+        "spirits": 240,
+        "mixers": 60,
+        "garnishes": 30,
+        "ice": 20
+      }
+    },
+    "metadata": {
+      "agent_name": "Calculator Agent",
+      "timestamp": "<Your ISO 8601 timestamp here>",
+      "calculation_method": "Based on standard servings and requirements for 3-hour event with pack-size considerations."
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:26:33.014562",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "total_servings": 90,
+      "bottles_needed": [
+        {
+          "spirit_type": "Tequila",
+          "quantity": 6,
+          "size": "750ml",
+          "reason": "Margaritas require tequila. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle)."
+        },
+        {
+          "spirit_type": "Rum",
+          "quantity": 6,
+          "size": "750ml",
+          "reason": "Mojitos require rum. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle)."
+        }
+      ],
+      "mixers_needed": [
+        {
+          "mixer_type": "Lime Juice",
+          "quantity": 6,
+          "unit": "bottles",
+          "reason": "Lime juice is a key ingredient in both cocktails."
+        },
+        {
+          "mixer_type": "Simple Syrup",
+          "quantity": 3,
+          "unit": "bottles",
+          "reason": "Used in both Margaritas and Mojitos."
+        },
+        {
+          "mixer_type": "Club Soda",
+          "quantity": 3,
+          "unit": "L",
+          "reason": "Used for Mojitos."
+        },
+        {
+          "mixer_type": "Triple Sec",
+          "quantity": 3,
+          "unit": "bottles",
+          "reason": "Used for Margaritas."
+        }
+      ],
+      "ice_needed": {
+        "amount": 15,
+        "unit": "lbs"
+      },
+      "garnishes_needed": [
+        {
+          "garnish_type": "Mint Leaves",
+          "quantity": "Sufficient for 45 Mojito servings"
+        },
+        {
+          "garnish_type": "Salt for Rim",
+          "quantity": "Sufficient for 45 Margarita servings"
+        },
+        {
+          "garnish_type": "Lime Wedges",
+          "quantity": "Sufficient for both cocktail types"
+        }
+      ],
+      "estimated_cost": 350,
+      "budget_status": "within_budget",
+      "pack_size_optimizations": [
+        "Buy spirits by the case for better pricing.",
+        "Consider bulk purchasing for lime juice and other mixers."
+      ],
+      "safety_flags": [],
+      "cost_breakdown": {
+        "spirits": 240,
+        "mixers": 60,
+        "garnishes": 30,
+        "ice": 20
+      }
+    },
+    "metadata": {
+      "agent_name": "Calculator Agent",
+      "timestamp": "<Your ISO 8601 timestamp here>",
+      "calculation_method": "Based on standard servings and requirements for 3-hour event with pack-size considerations."
+    }
+  },
+  "test_passed": true
+}

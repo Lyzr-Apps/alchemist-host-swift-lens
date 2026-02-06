@@ -1,0 +1,150 @@
+{
+  "agent_name": "Catalog Agent",
+  "agent_id": "6985956efe576c19864be8aa",
+  "agent_purpose": "product_catalog",
+  "description": "Provides product information, pricing, and cart assembly from spirits catalog",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "products": [
+        {
+          "product_id": "string",
+          "name": "string",
+          "brand": "string",
+          "category": "string",
+          "price": "number",
+          "pack_size": "string",
+          "availability": "string",
+          "quantity": "number"
+        }
+      ],
+      "cart_total": "number",
+      "substitutions_suggested": [
+        "any"
+      ],
+      "requires_user_approval": "boolean",
+      "approval_message": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "catalog_source": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "products": [
+        {
+          "product_id": "vodka_001",
+          "name": "Tito's Handmade Vodka",
+          "brand": "Tito's",
+          "category": "spirits",
+          "price": 20.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        },
+        {
+          "product_id": "vodka_002",
+          "name": "Absolut Vodka",
+          "brand": "Absolut",
+          "category": "spirits",
+          "price": 18.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        },
+        {
+          "product_id": "rum_001",
+          "name": "Bacardi Superior Rum",
+          "brand": "Bacardi",
+          "category": "spirits",
+          "price": 15.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        },
+        {
+          "product_id": "rum_002",
+          "name": "Mount Gay Eclipse Rum",
+          "brand": "Mount Gay",
+          "category": "spirits",
+          "price": 19.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        }
+      ],
+      "cart_total": 75.96,
+      "substitutions_suggested": [],
+      "requires_user_approval": false,
+      "approval_message": ""
+    },
+    "metadata": {
+      "agent_name": "Catalog Agent",
+      "timestamp": "2023-11-29T13:34:00Z",
+      "catalog_source": "General Knowledge"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:25:28.740714",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "products": [
+        {
+          "product_id": "vodka_001",
+          "name": "Tito's Handmade Vodka",
+          "brand": "Tito's",
+          "category": "spirits",
+          "price": 20.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        },
+        {
+          "product_id": "vodka_002",
+          "name": "Absolut Vodka",
+          "brand": "Absolut",
+          "category": "spirits",
+          "price": 18.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        },
+        {
+          "product_id": "rum_001",
+          "name": "Bacardi Superior Rum",
+          "brand": "Bacardi",
+          "category": "spirits",
+          "price": 15.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        },
+        {
+          "product_id": "rum_002",
+          "name": "Mount Gay Eclipse Rum",
+          "brand": "Mount Gay",
+          "category": "spirits",
+          "price": 19.99,
+          "pack_size": "750ml bottle",
+          "availability": "in_stock",
+          "quantity": 1
+        }
+      ],
+      "cart_total": 75.96,
+      "substitutions_suggested": [],
+      "requires_user_approval": false,
+      "approval_message": ""
+    },
+    "metadata": {
+      "agent_name": "Catalog Agent",
+      "timestamp": "2023-11-29T13:34:00Z",
+      "catalog_source": "General Knowledge"
+    }
+  },
+  "test_passed": true
+}

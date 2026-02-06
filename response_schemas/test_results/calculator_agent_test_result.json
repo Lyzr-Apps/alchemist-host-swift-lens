@@ -1,0 +1,92 @@
+{
+  "agent_name": "Calculator Agent",
+  "agent_id": "698595a5a791e6e318b8df73",
+  "test_message": "Calculate quantities needed: 15 guests, 3 hours, 2 cocktails per person per hour, Margaritas and Mojitos",
+  "expected_purpose": "quantity_calculation",
+  "timestamp": "2026-02-06T07:26:33.013676",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "total_servings": 90,
+      "bottles_needed": [
+        {
+          "spirit_type": "Tequila",
+          "quantity": 6,
+          "size": "750ml",
+          "reason": "Margaritas require tequila. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle)."
+        },
+        {
+          "spirit_type": "Rum",
+          "quantity": 6,
+          "size": "750ml",
+          "reason": "Mojitos require rum. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle)."
+        }
+      ],
+      "mixers_needed": [
+        {
+          "mixer_type": "Lime Juice",
+          "quantity": 6,
+          "unit": "bottles",
+          "reason": "Lime juice is a key ingredient in both cocktails."
+        },
+        {
+          "mixer_type": "Simple Syrup",
+          "quantity": 3,
+          "unit": "bottles",
+          "reason": "Used in both Margaritas and Mojitos."
+        },
+        {
+          "mixer_type": "Club Soda",
+          "quantity": 3,
+          "unit": "L",
+          "reason": "Used for Mojitos."
+        },
+        {
+          "mixer_type": "Triple Sec",
+          "quantity": 3,
+          "unit": "bottles",
+          "reason": "Used for Margaritas."
+        }
+      ],
+      "ice_needed": {
+        "amount": 15,
+        "unit": "lbs"
+      },
+      "garnishes_needed": [
+        {
+          "garnish_type": "Mint Leaves",
+          "quantity": "Sufficient for 45 Mojito servings"
+        },
+        {
+          "garnish_type": "Salt for Rim",
+          "quantity": "Sufficient for 45 Margarita servings"
+        },
+        {
+          "garnish_type": "Lime Wedges",
+          "quantity": "Sufficient for both cocktail types"
+        }
+      ],
+      "estimated_cost": 350,
+      "budget_status": "within_budget",
+      "pack_size_optimizations": [
+        "Buy spirits by the case for better pricing.",
+        "Consider bulk purchasing for lime juice and other mixers."
+      ],
+      "safety_flags": [],
+      "cost_breakdown": {
+        "spirits": 240,
+        "mixers": 60,
+        "garnishes": 30,
+        "ice": 20
+      }
+    },
+    "metadata": {
+      "agent_name": "Calculator Agent",
+      "timestamp": "<Your ISO 8601 timestamp here>",
+      "calculation_method": "Based on standard servings and requirements for 3-hour event with pack-size considerations."
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"total_servings\": 90,\n    \"bottles_needed\": [\n      {\n        \"spirit_type\": \"Tequila\",\n        \"quantity\": 6,\n        \"size\": \"750ml\",\n        \"reason\": \"Margaritas require tequila. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle).\"\n      },\n      {\n        \"spirit_type\": \"Rum\",\n        \"quantity\": 6,\n        \"size\": \"750ml\",\n        \"reason\": \"Mojitos require rum. For 45 servings, 6 bottles are needed (approx. 15 servings per bottle).\"\n      }\n    ],\n    \"mixers_needed\": [\n      {\n        \"mixer_type\": \"Lime Juice\",\n        \"quantity\": 6,\n        \"unit\": \"bottles\",\n        \"reason\": \"Lime juice is a key ingredient in both cocktails.\"\n      },\n      {\n        \"mixer_type\": \"Simple Syrup\",\n        \"quantity\": 3,\n        \"unit\": \"bottles\",\n        \"reason\": \"Used in both Margaritas and Mojitos.\"\n      },\n      {\n        \"mixer_type\": \"Club Soda\",\n        \"quantity\": 3,\n        \"unit\": \"L\",\n        \"reason\": \"Used for Mojitos.\"\n      },\n      {\n        \"mixer_type\": \"Triple Sec\",\n        \"quantity\": 3,\n        \"unit\": \"bottles\",\n        \"reason\": \"Used for Margaritas.\"\n      }\n    ],\n    \"ice_needed\": {\n      \"amount\": 15,\n      \"unit\": \"lbs\"\n    },\n    \"garnishes_needed\": [\n      {\n        \"garnish_type\": \"Mint Leaves\",\n        \"quantity\": \"Sufficient for 45 Mojito servings\"\n      },\n      {\n        \"garnish_type\": \"Salt for Rim\",\n        \"quantity\": \"Sufficient for 45 Margarita servings\"\n      },\n      {\n        \"garnish_type\": \"Lime Wedges\",\n        \"quantity\": \"Sufficient for both cocktail types\"\n      }\n    ],\n    \"estimated_cost\": 350,\n    \"budget_status\": \"within_budget\",\n    \"pack_size_optimizations\": [\n      \"Buy spirits by the case for better pricing.\",\n      \"Consider bulk purchasing for lime juice and other mixers.\"\n    ],\n    \"safety_flags\": [],\n    \"cost_breakdown\": {\n      \"spirits\": 240,\n      \"mixers\": 60,\n      \"garnishes\": 30,\n      \"ice\": 20\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Calculator Agent\",\n    \"timestamp\": \"<Your ISO 8601 timestamp here>\",\n    \"calculation_method\": \"Based on standard servings and requirements for 3-hour event with pack-size considerations.\"\n  }\n}"
+}

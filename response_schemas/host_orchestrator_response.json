@@ -1,0 +1,68 @@
+{
+  "agent_name": "Host Orchestrator",
+  "agent_id": "698595caab4bf65a66ad08a4",
+  "agent_purpose": "conversation_orchestration",
+  "description": "Manages chat conversation flow, collects event details through slot filling, coordinates sub-agents, and presents curated cocktail plans with structured JSON responses",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "conversation_state": "string",
+      "collected_slots": {
+        "event_type": "null",
+        "guest_count": "null",
+        "duration_hours": "null",
+        "occasion": "null",
+        "preferences": "null"
+      },
+      "next_question": "string",
+      "quick_replies": [
+        "string"
+      ],
+      "plan_cards": [
+        "any"
+      ],
+      "current_action": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "sub_agents_called": [
+        "any"
+      ]
+    }
+  },
+  "example_response": {
+    "status": "in_progress",
+    "result": {
+      "conversation_state": "slot_filling",
+      "collected_slots": {
+        "event_type": null,
+        "guest_count": null,
+        "duration_hours": null,
+        "occasion": null,
+        "preferences": null
+      },
+      "next_question": "What type of event are you planning?",
+      "quick_replies": [
+        "Birthday Party",
+        "Wedding",
+        "Corporate Event",
+        "Casual Gathering"
+      ],
+      "plan_cards": [],
+      "current_action": "Starting to collect event details by asking about event type"
+    },
+    "metadata": {
+      "agent_name": "Host Orchestrator",
+      "timestamp": "2026-02-06T12:00:00Z",
+      "sub_agents_called": []
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:24:59.653874",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "raw_text": "```json\n{\n  \"status\": \"in_progress\",\n  \"result\": {\n    \"conversation_state\": \"slot_filling\",\n    \"collected_slots\": {\n      \"event_type\": \"Backyard BBQ\",\n      \"guest_count\": 15,\n      \"duration_hours\": null,\n      \"occasion\": null,\n      \"preferences\": [\"Easy Cocktails\", \"Not Too Strong\"]\n    },\n    \"next_question\": \"How long will the backyard BBQ last?\",\n    \"quick_replies\": [\"2 hours\", \"4 hours\", \"6 hours\", \"All day\"],\n    \"plan_cards\": [],\n    \"current_action\": \"Collecting event details - gathered event type, guest count, and preferences, now asking about duration\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Host Orchestrator\",\n    \"timestamp\": \"2023-10-11T09:30:00Z\",\n    \"sub_agents_called\": []\n  }\n}\n```"
+  },
+  "test_passed": false
+}

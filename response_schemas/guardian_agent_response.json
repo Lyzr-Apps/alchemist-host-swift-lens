@@ -1,0 +1,74 @@
+{
+  "agent_name": "Guardian Agent",
+  "agent_id": "69859542e5d25ce3f598cba7",
+  "agent_purpose": "compliance_validation",
+  "description": "Validates compliance with responsible drinking policies and age restrictions",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "validation_passed": "boolean",
+      "issues_found": [
+        "string"
+      ],
+      "recommended_action": "string",
+      "safe_alternative": "string",
+      "confirmation_required": "boolean",
+      "confirmation_message": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "policies_checked": [
+        "string"
+      ]
+    }
+  },
+  "example_response": {
+    "status": "requires_confirmation",
+    "result": {
+      "validation_passed": true,
+      "issues_found": [
+        "Potential for excessive drinking",
+        "Age verification for college party attendees"
+      ],
+      "recommended_action": "confirm_with_user",
+      "safe_alternative": "Consider reducing the amount of alcohol and ensure responsible consumption guidelines are clearly communicated to all attendees.",
+      "confirmation_required": true,
+      "confirmation_message": "Please confirm that all attendees are of legal drinking age and responsible consumption measures are in place given the quantity of alcohol for the event."
+    },
+    "metadata": {
+      "agent_name": "Guardian Agent",
+      "timestamp": "2023-11-23T19:08:57Z",
+      "policies_checked": [
+        "Responsible consumption enforcement",
+        "Age-gating validation"
+      ]
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:25:22.692731",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "requires_confirmation",
+    "result": {
+      "validation_passed": true,
+      "issues_found": [
+        "Potential for excessive drinking",
+        "Age verification for college party attendees"
+      ],
+      "recommended_action": "confirm_with_user",
+      "safe_alternative": "Consider reducing the amount of alcohol and ensure responsible consumption guidelines are clearly communicated to all attendees.",
+      "confirmation_required": true,
+      "confirmation_message": "Please confirm that all attendees are of legal drinking age and responsible consumption measures are in place given the quantity of alcohol for the event."
+    },
+    "metadata": {
+      "agent_name": "Guardian Agent",
+      "timestamp": "2023-11-23T19:08:57Z",
+      "policies_checked": [
+        "Responsible consumption enforcement",
+        "Age-gating validation"
+      ]
+    }
+  },
+  "test_passed": true
+}
